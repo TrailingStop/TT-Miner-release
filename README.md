@@ -40,6 +40,7 @@
 | Ethash | includes Etchash(Ethereum Classic) & Ubqhash(Ubiq) |
 | KawPow | includes FiroPow(Firo), EvrProgPow(Evrmore) |
 | ProgPow | includes ProgPowZ(Zano), vProgPow(VeriBlock) and ProgPow(Veil) |
+| Ghostrider | includes Mike |
 | SHA512256D ||
 
 
