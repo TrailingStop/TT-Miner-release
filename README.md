@@ -1,3 +1,11 @@
+# TT-Miner 2022.4.2
+
+- fixed an issue that could cause a 'duplicate share' when using any ProgPoW/KawPow algo
+- reduced miningfee for Radiant to 1%
+- use Cuda 12.0
+
+
+
 # TT-Miner 2022.4
 
 - improved defaut hashrates for all variants of ProgPow and KawPow
@@ -25,7 +33,6 @@
 | - | - |
 | Epic Cash | 2.0 % |
 | Ghostrider/Mike algo| 2.0 % |
-| Radiant/Sha512256D| 2.0 % |
 | Solo to Qt-Wallet | 2.0 % |
 | all other | 1.0 % |
 
