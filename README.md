@@ -1,29 +1,18 @@
-# TT-Miner 2022.4.2
-
-- fixed an issue that could cause a 'duplicate share' when using any ProgPoW/KawPow algo
-- reduced miningfee for Radiant to 1%
-- use Cuda 12.0
+# TT-Miner
 
 
+## overclocking with TT-Miner
+To make use of the OC functions of TT-Miner you have to run TT-Miner under Administrator credentials. If you use OC options and run TT-Miner as regular user it will ignore all OC settings from the command line.
 
-# TT-Miner 2022.4
+### Sample commandline for mining EPIC and Radian with OC settings for RTX 3060
+This commandline will mine EPIC on the 'fastepic' pool and radiant on a ssl pool. For EPIC mining TT will not use any OC settings, for Radiant it will set the core clock to 1305 MHz and the memory clock to 810 MHz.
 
-- improved defaut hashrates for all variants of ProgPow and KawPow
-- printed hashrates is discounting the devfee (printed hashrate = full hashrate - devfee hashrate) - TT-Miner shows what you the miner gets. Please note that most miners show the full hashrate that includes the devfee. For a reliable hashrate comparison use pool-hashrates after some hours/days.
-- optimized NiceHash support (ETCHASH, ETHASH, KAWPOW), fast DAG switching
-- optimized mining to a QT-wallet, supported by most KawPow coins (known exception: TTM, ARL)
-- new algo Sha512256D for Radiant
-- new algo EvrProgPow for Evrmore
-- new coin RXD(Radiant)
-- new coin EVR(Evrmore)
-- new coin VTE(VirtualEmpire)
-- new coin ETHW(EthereumPOW)
-- new coin ETHF(EthereumFair)
-- new coin GSPC(GSP Coin)
-- new coin LAB(Labyrinth)
-- new commandline option: daginfo - prints information about the active dag
-- deletes DAG files that are older than 90 days
-- deletes DAG files that were used 2 epochs ago
+./TT-Miner -oc-corealt 1305 -oc-memalt 810 -luck -poolinfo -coin EPIC -P ssl://\<YOUR_KEYBASE_ID\>.\<YOUR_WORKER_NAME\>:\<YOUR_PASSWORD\>@fastepic.eu:3416 -coinalt RXD -Palt ssl://\<RADIANT_WALLET\>.\<RADIANT_WORKER\>:\<RADIANT_PASSWORD\>@\<RADIANT_SERVER\>:\<RADIANT_PORT\>
+
+You can also use the -u,-o,-p notation like this
+./TT-Miner -oc-corealt 1305 -oc-memalt 810 -luck -poolinfo -coin EPIC -o ssl://fastepic.eu:3416 -u \<YOUR_KEYBASE_ID\>.\<YOUR_WORKER_NAME\> -p \<YOUR_PASSWORD\> -coinalt RXD -oalt ssl://\<RADIANT_SERVER\>:\<RADIANT_PORT\> -ualt \<RADIANT_WALLET\>.\<RADIANT_WORKER\> -palt \<RADIANT_PASSWORD\>
+
+
 
 
 
@@ -49,6 +38,7 @@
 | ProgPow | includes ProgPowZ(Zano), vProgPow(VeriBlock) and ProgPow(Veil) |
 | Ghostrider | includes Mike |
 | SHA512256D ||
+| SHA256DT ||
 
 
 
@@ -94,6 +84,7 @@
 | GSPC | GSP Coin | GhostRider |
 | VKAX | Vkax | Mike |
 | RXD | Radiant | Sha512256D |
+| NOVO | Novo | Sha256DT |
 
 
 
@@ -132,6 +123,17 @@
 | -dag-2mem | Keeps a copy of the created DAG in the host memory.<br/><dl><dt>Advantage:</dt><dd>Can reuse the DAG if required (EPIC-Mining, NICEHASH)</dd><dd>Saves energy since the DAG is created on a single GPU only and then distributed to the other GPUs</dd><dd>You can run the GPU that creates the DAG with different OC settings than the other GPUs</dd><dt>Disadvantage:</dt><dd>Needs hostmemory to keep the DAG</dd></dl> |
 | -dag-2disk | Keeps a copy of the created DAG on the disk.<br/><dl><dt>Advantage:</dt><dd>Can reuse the DAG if required (EPIC-Mining, NICEHASH)</dd><dd>Saves energy since the DAG is created on a single GPU only and then distributed to the other GPUs</dd><dd>You can run the GPU that creates the DAG with different OC settings than the other GPUs</dd><dd>Faster start of mining</dd><dt>Disadvantage:</dt><dd>Needs diskspace to keep the DAG</dd></dl> |
 | -daginfo | Prints information of the active DAG in the mining statistics |
+
+
+
+### OC options
+| Option | Information |
+| - | - |
+| -oc-core arg | Defines the primary coin to mine. |
+| -oc-corealt arg | Defines the alternate coin to mine (primary coin must be 'EPIC'). |
+| -oc-mem arg | Defines the primary coin to mine. |
+| -oc-memalt arg | Defines the alternate coin to mine (primary coin must be 'EPIC'). |
+
 
 
 
