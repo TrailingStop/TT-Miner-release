@@ -3,11 +3,11 @@
 
 ## DAG management
 TT-Miner uses a special DAG management that allows to change the DAG very quickly. This is very useful if you mine at NoiceHash ETHASH or KawPow algo. Both change the DAG frequently and can make good use of TT-Miners new DAG handling.
-For more information please see:
--dag-2disk
--dag-2mem
+For more information please see:<br/>
+-dag-2disk<br/>
+-dag-2mem<br/>
 
-Also for more information about the active DAG:
+Also for more information about the active DAG:<br/>
 -daginfo
 
 
