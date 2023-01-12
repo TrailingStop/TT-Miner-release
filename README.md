@@ -1,6 +1,10 @@
 # TT-Miner
 
 
+
+## special DFG handling for NiceHash (ETHASH/KawPow) and the frequent DAG change.
+
+
 ## overclocking with TT-Miner
 To make use of the OC functions of TT-Miner you have to run TT-Miner under Administrator credentials. If you use OC options and run TT-Miner as regular user it will ignore all OC settings from the command line.
 
@@ -11,6 +15,9 @@ This commandline will mine EPIC on the 'fastepic' pool and radiant on a ssl pool
 
 You can also use the -u,-o,-p notation like this
 ./TT-Miner -oc-corealt 1305 -oc-memalt 810 -luck -poolinfo -coin EPIC -o ssl://fastepic.eu:3416 -u \<YOUR_KEYBASE_ID\>.\<YOUR_WORKER_NAME\> -p \<YOUR_PASSWORD\> -coinalt RXD -oalt ssl://\<RADIANT_SERVER\>:\<RADIANT_PORT\> -ualt \<RADIANT_WALLET\>.\<RADIANT_WORKER\> -palt \<RADIANT_PASSWORD\>
+
+
+
 
 
 
@@ -82,6 +89,7 @@ You can also use the -u,-o,-p notation like this
 | NAPI | Atanapicoin | GhostRider |
 | THOON | Thooneum | GhostRider |
 | GSPC | GSP Coin | GhostRider |
+| LTRM | Litoreum | GhostRider |
 | VKAX | Vkax | Mike |
 | RXD | Radiant | Sha512256D |
 | NOVO | Novo | Sha256DT |
@@ -112,7 +120,7 @@ You can also use the -u,-o,-p notation like this
 ### Coin options
 | Option | Information |
 | - | - |
-| -coin arg | Defines the primary coin to mine.<br/>Supported coins (values for 'arg'):<br/>ETC<br/>CLO<br/>EXP<br/>ETP<br/>UBQ<br/>SERO<br/>EPIC<br/>ZANO<br/>EVOX<br/>VBK<br/>VEIL<br/>FIRO<br/>EVR<br/>RVN<br/>NEOX<br/>ARL<br/>KAW<br/>PRCO<br/>SATO<br/>HVQ<br/>TTM<br/>MEOW<br/>REDE<br/>VTE<br/>LAB<br/>RTM<br/>BTRM<br/>BUT<br/>YERB<br/>JGC<br/>FITA<br/>BBC<br/>NAPI<br/>THOON<br/>GSPC<br/>VKAX |
+| -coin arg | Defines the primary coin to mine.<br/>Supported coins (values for 'arg'):<br/>ETC<br/>CLO<br/>EXP<br/>ETP<br/>UBQ<br/>SERO<br/>EPIC<br/>ZANO<br/>EVOX<br/>VBK<br/>VEIL<br/>FIRO<br/>EVR<br/>RVN<br/>NEOX<br/>ARL<br/>KAW<br/>PRCO<br/>SATO<br/>HVQ<br/>TTM<br/>MEOW<br/>REDE<br/>VTE<br/>LAB<br/>RTM<br/>BTRM<br/>BUT<br/>YERB<br/>JGC<br/>FITA<br/>BBC<br/>NAPI<br/>THOON<br/>GSPC<br/>LTRM<br/>VKAX |
 | -coinalt arg | Defines the alternate coin to mine (primary coin must be 'EPIC'). |
 
 
@@ -133,6 +141,8 @@ You can also use the -u,-o,-p notation like this
 | -oc-corealt arg | Defines the alternate coin to mine (primary coin must be 'EPIC'). |
 | -oc-mem arg | Defines the primary coin to mine. |
 | -oc-memalt arg | Defines the alternate coin to mine (primary coin must be 'EPIC'). |
+| -oc-pl arg | Defines the Power-Limit for the primary coin in percent. |
+| -oc-plalt arg | Defines the Power-Limit for the alternate coin in percent. (primary coin must be 'EPIC'). |
 
 
 
