@@ -2,13 +2,17 @@
 
 
 ## DAG management
-TT-Miner uses a special DAG management that allows to change the DAG very quickly. This is very useful if you mine at NiceHash ETHASH or KawPow algo. Both change the DAG frequently and can make good use of TT-Miners new DAG handling.
-For more information please see:<br/>
--dag-2disk<br/>
--dag-2mem<br/>
+TT-Miner uses a special DAG management that allows to change the DAG very quickly. This is very useful if you mine at NiceHash ETHASH or KawPow algo. Both change the DAG frequently and can make good use of TT-Miners new DAG handling. For more information please see:
+-dag-2disk
+-dag-2mem
 
-Also for more information about the active DAG:<br/>
+Also for more information about the active DAG:
 -daginfo
+
+
+
+## hashrate reporting 
+suport hashrate reporting, so far suppiorted by 2miners and ethermine(bitfly)
 
 
 
@@ -135,7 +139,7 @@ You can also use the -u,-o,-p notation like this
 ### DAG options
 | Option | Information |
 | - | - |
-| -dag-2mem | Keeps a copy of the created DAG in the host memory.<br/><dl><dt>Advantage:</dt><dd>Can reuse the DAG if required (EPIC-Mining, NICEHASH)</dd><dd>Saves energy since the DAG is created on a single GPU only and then distributed to the other GPUs</dd><dd>You can run the GPU that creates the DAG with different OC settings than the other GPUs</dd><dt>Disadvantage:</dt><dd>Needs hostmemory to keep the DAG</dd></dl> |
+| -dag-2mem | Keeps a copy of the created DAG in the host memory.<br/><dl><dt>Advantage:</dt><dd>Can reuse the DAG if required (EPIC-Mining, NICEHASH)</dd><dd>Saves energy since the DAG is created on a single GPU only and then distributed to the other GPUs</dd><dd>You can run the GPU that creates the DAG with different OC settings than the other GPUs</dd><dt>Disadvantage:</dt><dd>Needs host memory to keep the DAG</dd></dl> |
 | -dag-2disk | Keeps a copy of the created DAG on the disk.<br/><dl><dt>Advantage:</dt><dd>Can reuse the DAG if required (EPIC-Mining, NICEHASH)</dd><dd>Saves energy since the DAG is created on a single GPU only and then distributed to the other GPUs</dd><dd>You can run the GPU that creates the DAG with different OC settings than the other GPUs</dd><dd>Faster start of mining</dd><dt>Disadvantage:</dt><dd>Needs diskspace to keep the DAG</dd></dl> |
 | -daginfo | Prints information of the active DAG in the mining statistics |
 
@@ -233,7 +237,7 @@ Some project modified the format of the RPC protocol so that TT is not able to e
 - Arielcoin(ARL)
 - Titanium(TTM)
 
-If you see any addition project that modified the RPC protocol so that solo mining is not supported pßülease let me know.
+If you see any addition project that modified the RPC protocol so that solo mining is not supported please let me know.
 
 
 
