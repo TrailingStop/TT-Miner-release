@@ -39,7 +39,6 @@ You can also use the -u,-o,-p notation like this
 | Mining | fee |
 | - | - |
 | Epic Cash | 2.0 % |
-| Ghostrider/Mike algo| 2.0 % |
 | Solo to Qt-Wallet | 2.0 % |
 | all other | 1.0 % |
 
@@ -52,8 +51,8 @@ You can also use the -u,-o,-p notation like this
 | Algorithm | remarks |
 | - | - |
 | Ethash | includes Etchash(Ethereum Classic) & Ubqhash(Ubiq) |
-| KawPow | includes FiroPow(Firo), EvrProgPow(Evrmore) |
-| ProgPow | includes ProgPowZ(Zano), vProgPow(VeriBlock) and ProgPow(Veil) |
+| KawPow | includes FiroPow(Firo), FiroPoWScc(SCC) |
+| ProgPow | includes ProgPowZ(Zano), EvrProgPow(Evrmore), vProgPow(VeriBlock) and ProgPow(Veil) |
 | Ghostrider | includes Mike |
 | SHA512256D ||
 | SHA256DT ||
@@ -71,6 +70,7 @@ You can also use the -u,-o,-p notation like this
 | ETP | Metaverse | Ethash |
 | UBQ | Ubiq | Ubqhash |
 | FIRO | Firo | FiroPow |
+| SCC | StakeCubeCoin | FiroPowScc |
 | EVR | Evrmore | EvrProgPow |
 | RVN | Ravencoin | KawPow |
 | NEOX | Neoxa | KawPow |
