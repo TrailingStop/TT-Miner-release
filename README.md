@@ -22,12 +22,10 @@ To make use of the OC functions of TT-Miner you have to run TT-Miner under Admin
 ### Sample commandline for mining EPIC and Radian with OC settings for RTX 3060
 This commandline will mine EPIC on the 'fastepic' pool and radiant on a ssl pool. For EPIC mining TT will not use any OC settings, for Radiant it will set the core clock to 1305 MHz and the memory clock to 810 MHz.
 
-./TT-Miner -oc-corealt 1305 -oc-memalt 810 -luck -poolinfo -coin EPIC -P ssl://\<YOUR_KEYBASE_ID\>.\<YOUR_WORKER_NAME\>:\<YOUR_PASSWORD\>@fastepic.eu:3416 -coinalt RXD -Palt ssl://\<RADIANT_WALLET\>.\<RADIANT_WORKER\>:\<RADIANT_PASSWORD\>@\<RADIANT_SERVER\>:\<RADIANT_PORT\>
+./TT-Miner -oc-corealt 1305 -oc-memalt 810 -luck -poolinfo -coin EPIC -P ssl://\keybaseid_<YOUR_KEYBASE_ID\>.\<YOUR_WORKER_NAME\>:\<YOUR_PASSWORD\>@fastepic.eu:3416 -coinalt RXD -Palt ssl://\<RADIANT_WALLET\>.\<RADIANT_WORKER\>:\<RADIANT_PASSWORD\>@\<RADIANT_SERVER\>:\<RADIANT_PORT\>
 
 You can also use the -u,-o,-p notation like this
-./TT-Miner -oc-corealt 1305 -oc-memalt 810 -luck -poolinfo -coin EPIC -o ssl://fastepic.eu:3416 -u \<YOUR_KEYBASE_ID\>.\<YOUR_WORKER_NAME\> -p \<YOUR_PASSWORD\> -coinalt RXD -oalt ssl://\<RADIANT_SERVER\>:\<RADIANT_PORT\> -ualt \<RADIANT_WALLET\>.\<RADIANT_WORKER\> -palt \<RADIANT_PASSWORD\>
-
-
+./TT-Miner -oc-corealt 1305 -oc-memalt 810 -luck -poolinfo -coin EPIC -o ssl://fastepic.eu:3416 -u \keybaseid_<YOUR_KEYBASE_ID\>.\<YOUR_WORKER_NAME\> -p \<YOUR_PASSWORD\> -coinalt RXD -oalt ssl://\<RADIANT_SERVER\>:\<RADIANT_PORT\> -ualt \<RADIANT_WALLET\>.\<RADIANT_WORKER\> -palt \<RADIANT_PASSWORD\>
 
 
 
@@ -250,7 +248,7 @@ You have the choice to mine EPIC either directly to the local node, or to one of
 TT-Miner -coin EPIC -P <SOME_ID>.<SOME_WORKER>@127.0.0.1:3416
 
 ## Sample command lines to mine just EPIC on fastepic.eu
-TT-Miner -coin EPIC -P ssl://\<YOUR_KEYBASE_ID\>.\<YOUR_WORKER_NAME\>:\<YOUR_PASSWORD\>@fastepic.eu:3416
+TT-Miner -coin EPIC -P ssl://\keybaseid_<YOUR_KEYBASE_ID\>.\<YOUR_WORKER_NAME\>:\<YOUR_PASSWORD\>@fastepic.eu:3416
 
 ## Sample command lines to mine just EPIC on 51pool.online
 TT-Miner -coin EPIC -P \<YOUR_ID\>#\<YOUR_WORKER_NAME\>:\<YOUR_PASSWORD\>@51pool.online:4416
@@ -275,7 +273,7 @@ Please see the samples below on how to setup mining EPIC and an alternate coin
 TT-Miner -coin EPIC -P <SOME_ID>.<SOME_WORKER>@127.0.0.1:3416 -coinalt ETC -Palt stratum+ssl://\<YOUR_ETC_WALLET_ID\>.\<YOUR_ETC_WORKER\>@etc.2miners.com:11010
 
 ## the same goes for all other combination - here an example to mine EPIC on fastepic and RVN on flypool.org as alternate coin
-TT-Miner -coin EPIC -P ssl://\<YOUR_KEYBASE_ID\>.\<YOUR_WORKER_NAME\>:\<YOUR_PASSWORD\>@fastepic.eu:3416 -coinalt RVN -Palt ssl://\<YOUR_RVN_WALLET_ID\>.\<YOUR_RVN_WORKER\>@stratum-ravencoin.flypool.org:3443
+TT-Miner -coin EPIC -P ssl://\keybaseid_<YOUR_KEYBASE_ID\>.\<YOUR_WORKER_NAME\>:\<YOUR_PASSWORD\>@fastepic.eu:3416 -coinalt RVN -Palt ssl://\<YOUR_RVN_WALLET_ID\>.\<YOUR_RVN_WORKER\>@stratum-ravencoin.flypool.org:3443
 
 ## mine EPIC on pool51.online and RXD on woolypooly as alternate coin
 TT-Miner -coin EPIC -P <YOUR_USER_ID\>#\<YOUR_WORKER_NAME\>:\<YOUR_PASSWORD\>@51pool.online:4416 -coinalt RXD -Palt ssl://\<YOUR_RXD_WALLET_ID\>.\<YOUR_RXD_WORKER\>@pool.woolypooly.com:3122
