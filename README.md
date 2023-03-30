@@ -66,6 +66,7 @@ You can also use the -u,-o,-p notation like this
 | CLO | Callisto | Ethash |
 | EXP | Expanse | Ethash |
 | ETP | Metaverse | Ethash |
+| REDE | RedeCoin | Ethash |
 | UBQ | Ubiq | Ubqhash |
 | FIRO | Firo | FiroPow |
 | SCC | StakeCubeCoin | FiroPowScc |
@@ -79,7 +80,6 @@ You can also use the -u,-o,-p notation like this
 | HVQ | Hivecoin | KawPow |
 | TTM | Titanium | KawPow |
 | MEOW | MeowCoin | KawPow |
-| REDE | RedeCoin | KawPow |
 | VTE | VirtualEmpire | KawPow |
 | LAB | Labyrinth | KawPow |
 | SERO | Super Zero | ProgPow |
