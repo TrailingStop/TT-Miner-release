@@ -26,6 +26,7 @@
 | KawPow | includes FiroPow(Firo), FiroPoWScc(SCC) |
 | ProgPow | includes ProgPowZ(Zano/Chinet/Evolution), EvrProgPow(Evrmore), vProgPow(VeriBlock) and ProgPow(Veil) |
 | Ghostrider | includes Mike |
+| SHA256D ||
 | SHA512256D ||
 | SHA256DT ||
 | Blake3 ||
