@@ -294,6 +294,9 @@ You have the choice to mine EPIC either directly to the local node, or to one of
 ## Sample command lines to mine just EPIC on fastepic.eu
 #### TT-Miner -c EPIC -P ssl://keybaseid_<YOUR_KEYBASE_ID\>.\<YOUR_WORKER_NAME\>:\<YOUR_PASSWORD\>@fastepic.eu:3416
 
+## Sample command lines to mine just EPIC on epicmine.io
+#### TT-Miner -c EPIC -P ssl:\<YOUR_ID\>.\<YOUR_WORKER_NAME\>:\<YOUR_PASSWORD\>@de.epicmine.io:3334
+
 ## Sample command lines to mine just EPIC on 51pool.online
 #### TT-Miner -c EPIC -P \<YOUR_ID\>#\<YOUR_WORKER_NAME\>:\<YOUR_PASSWORD\>@51pool.online:4416
 
