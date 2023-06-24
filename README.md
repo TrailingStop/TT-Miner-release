@@ -307,6 +307,9 @@ You can also just use TT for the lottery:
 #### TT-Miner -lottery BCH <YOUR-BCH-WALLET>
 
 
+------------------------------------
+## known issues/bugs
+There is a bug on some system mining at rplant. I'm working on this. If someone have crashes/freezes with rplant please get in touch with me.
 
 ------------------------------------
 If you have any issues to setup your commandline please do not hesitate to contact me or join the TT-Miner discord server. I'm happy to help if I can.
