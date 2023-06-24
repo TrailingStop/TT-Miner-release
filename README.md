@@ -5,7 +5,7 @@
 - Pool & Solo mining (to QT-Wallet & EPIC Listener, Zano-Wallet)
 - DAG management, save to disk, mem and swap on GPU
 - alternating mining Zil/EPIC/any 2nd or 3rd coin
-- OC function completed
+- Overclocking (core and memory clock lock/offset and power limit)
 - separat OC-settings per algo/device
 - BTC/BCH lottery ( mine solo BCH/BTC with very low hashrate)
 
