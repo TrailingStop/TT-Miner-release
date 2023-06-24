@@ -7,7 +7,7 @@
 - alternating mining Zil/EPIC/any 2nd or 3rd coin
 - Overclocking (core and memory clock lock/offset and power limit)
 - separat OC-settings per algo/device
-- BTC/BCH lottery ( mine solo BCH/BTC with very low hashrate)
+- BTC/BCH lottery (mine solo BCH/BTC with very low hashrate)
 
 
 ## Mining fees
