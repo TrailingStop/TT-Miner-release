@@ -1,4 +1,4 @@
-# TT-Miner - Version 2023.2.2
+# TT-Miner - Version 2023.3.0
 
 ## GPU-Miner for Nvidia - Windows & Linux (Hive custom miner package available)
 - Ethash, ProgPow, KawPow, Ghostrider, Sha256d, Sha512256d, Sha256dt, Blake3
