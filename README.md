@@ -1,13 +1,14 @@
-# TT-Miner - Version 2023.3.0
+# TT-Miner - Version 2023.4.0
 
 ## GPU-Miner for Nvidia - Windows & Linux (Hive custom miner package available)
-- Ethash, ProgPow, KawPow, Ghostrider, Sha256d, Sha512256d, Sha256dt, Blake3
+- Ethash, ProgPow, KawPow, Ghostrider, Sha256d, Sha512256d, Sha256dt, Blake3, Sha3D, EthashB3
 - Pool & Solo mining (to QT-Wallet & EPIC Listener, Zano-Wallet)
 - DAG management, save to disk, mem and swap on GPU
 - alternating mining Zil/EPIC/any 2nd or 3rd coin
 - Overclocking (core and memory clock lock/offset and power limit)
 - separat OC-settings per algo/device
 - BTC/BCH lottery (mine solo BCH/BTC with very low hashrate)
+- support Intel integrated iGPI (Windows & low memory algos: Sha256d, Sha512256d, Sha256dt, Blake3, Sha3D)
 
 
 ## Mining fees
@@ -23,12 +24,14 @@
 | Algorithm | remarks |
 | - | - |
 | Ethash | includes Etchash(Ethereum Classic) & Ubqhash(Ubiq) |
+| EthashB3 ||
 | KawPow | includes FiroPow(Firo), FiroPoWScc(SCC) |
 | ProgPow | includes ProgPowZ(Zano/Chinet/Evolution), EvrProgPow(Evrmore), vProgPow(VeriBlock) and ProgPow(Veil) |
 | Ghostrider | includes Mike |
 | SHA256D ||
 | SHA512256D ||
 | SHA256DT ||
+| SHA3D ||
 | Blake3 ||
 
 
@@ -37,6 +40,7 @@
 | - | - |
 | Ethash | AKA, ZIL, BLACK, EGEM, GRAMS, ETHO, ALT, AVS, OCTA, CLO, EXP, ETP, ETHW, ETHF, REDE, ELH |
 | Etchash | ETC |
+| EthashB3 | RTH |
 | Ubqhash | UBQ |
 | ProgPow | EPIC, SERO, VEIL |
 | ProgPowZ | ZANO, EVOX |
@@ -49,6 +53,7 @@
 | SHA512256D | RXD |
 | SHA256DT | NOVO |
 | SHA256 | BTC, BCH |
+| SHA3D | KCN |
 | Blake3 | ALPH |
 
 
