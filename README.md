@@ -1,5 +1,7 @@
 # TT-Miner - Version 2023.4.0
 
+# Only today: Selling all sources of TT-Miner. If you like to buy please send your offer to droste@TradeProject.de
+
 ## GPU-Miner for Nvidia - Windows & Linux (Hive custom miner package available)
 - Ethash, ProgPow, KawPow, Ghostrider, Sha256d, Sha512256d, Sha256dt, Blake3, Sha3D, EthashB3
 - Pool & Solo mining (to QT-Wallet & EPIC Listener, Zano-Wallet)
