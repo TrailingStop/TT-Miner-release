@@ -1,4 +1,4 @@
-# TT-Miner - Version 2023.4.0
+# TT-Miner - Version 2023.4.1
 
 # Only today: Selling all sources of TT-Miner. If you like to buy please send your offer to droste@TradeProject.de
 
@@ -108,12 +108,14 @@ That's it.
 
 
 ## OC option
-TT understand clock-locks and clock-offsets as well as popwer-limits:
+TT understand clock-locks and clock-offsets as well as power-limits:
 - -oc-core[...] INT = core clock lock
 - -oc-coreoff[...] INT = core clock offset
 - -oc-mem[...] INT = memory clock lock
 - -oc-memoff[...] INT = memory clock offset
 - -oc-pl[...][W] INT = power limit. If you specify just a single number TT treats it as percent, If use append a 'W' it uses you setting as absolute Watt limit
+- -oc-fan[...] INT = control the fan
+
 
 
 
