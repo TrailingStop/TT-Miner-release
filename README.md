@@ -55,7 +55,7 @@
 | SHA256DT | NOVO |
 | SHA256 | BTC, BCH |
 | SHA3D | KCN |
-| SHA3SOL | ETI |
+| SHA3SOL | ETI, BNBTC |
 | Blake3 | ALPH |
 
 
