@@ -1,7 +1,7 @@
 # TT-Miner - Version 2023.4.2
 
 ## GPU-Miner for Nvidia - Windows & Linux (Hive custom miner package available)
-- Ethash, ProgPow, KawPow, Ghostrider, Sha256d, Sha512256d, Sha256dt, Blake3, Sha3D, EthashB3
+- Ethash, ProgPow, KawPow, Ghostrider, Sha256d, Sha512256d, Sha256dt, Sha3Solidity, Blake3, Sha3D, EthashB3
 - Pool & Solo mining (to QT-Wallet & EPIC Listener, Zano-Wallet)
 - DAG management, save to disk, mem and swap on GPU
 - alternating mining Zil/EPIC/any 2nd or 3rd coin
@@ -31,6 +31,7 @@
 | SHA256D ||
 | SHA512256D ||
 | SHA256DT ||
+| SHA3SOL | Sha3 Solidity for Etica |
 | SHA3D ||
 | Blake3 ||
 
@@ -54,7 +55,7 @@
 | SHA256DT | NOVO |
 | SHA256 | BTC, BCH |
 | SHA3D | KCN |
-| Etica | ETI |
+| SHA3SOL | ETI |
 | Blake3 | ALPH |
 
 
