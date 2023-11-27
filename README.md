@@ -31,7 +31,7 @@
 | SHA256D ||
 | SHA512256D ||
 | SHA256DT ||
-| SHA3SOL | Sha3 Solidity for Etica |
+| SHA3SOLIDITY | Sha3 Solidity for Etica |
 | SHA3D ||
 | Blake3 ||
 
@@ -55,7 +55,7 @@
 | SHA256DT | NOVO |
 | SHA256 | BTC, BCH |
 | SHA3D | KCN |
-| SHA3SOL | ETI, BNBTC |
+| SHA3SOLIDITY | ETI, BNBTC |
 | Blake3 | ALPH |
 
 
