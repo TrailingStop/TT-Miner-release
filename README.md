@@ -39,7 +39,7 @@
 ## Supported coins in detail
 | Algorithm | Coin |
 | - | - |
-| Ethash | AKA, ZIL, BLACK, EGEM, GRAMS, ETHO, ALT, AVS, OCTA, CLO, EXP, ETP, ETHW, ETHF, REDE, ELH |
+| Ethash | AKA, ZIL, BLACK, EGEM, GRAMS, ETHO, ALT, AVS, OCTA, CLO, EXP, ETP, ETHW, ETHF, REDE, ELH, EGAZ |
 | Etchash | ETC |
 | EthashB3 | RTH |
 | Ubqhash | UBQ |
