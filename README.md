@@ -31,7 +31,7 @@
 | SHA256D ||
 | SHA512256D ||
 | SHA256DT ||
-| SHA3SOLIDITY | Sha3 Solidity for Etica |
+| SHA3SOLIDITY | Sha3 Solidity for Etica and BNbitcoin |
 | SHA3D ||
 | Blake3 ||
 
