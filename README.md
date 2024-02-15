@@ -15,6 +15,7 @@
 | Mining | fee |
 | - | - |
 | Epic Cash | 2.0 % |
+| Ghostrider | 2.0 % |
 | Solo to Qt-Wallet | 2.0 % |
 | BTC/BCH lottery | 1.0 % |
 | all other | 1.0 % |
