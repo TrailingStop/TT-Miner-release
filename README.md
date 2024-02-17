@@ -1,4 +1,4 @@
-# TT-Miner - Version 2024.1.1
+# TT-Miner - Version 2024.1.2
 
 ## GPU-Miner for Nvidia - Windows & Linux (Hive custom miner package available)
 - Ethash, ProgPow, KawPow, Ghostrider, Sha256d, Sha512256d, Sha256dt, Sha3Solidity, Blake3, Sha3D, EthashB3
@@ -8,14 +8,15 @@
 - Overclocking (core and memory clock lock/offset and power limit)
 - separat OC-settings per algo/device
 - BTC/BCH lottery (mine solo BCH/BTC with very low hashrate)
-- support Intel integrated iGPI (Windows & low memory algos: Sha256d, Sha512256d, Sha256dt, Blake3, Sha3D)
+- support Intel integrated iGPU (Windows & low memory algos: Sha256d, Sha512256d, Sha256dt, Blake3, Sha3D, Sha3Solidity)
+- different algo/coin per gpu
 
 
 ## Mining fees
 | Mining | fee |
 | - | - |
 | Epic Cash | 2.0 % |
-| Ghostrider | 2.0 % |
+| Ghostrider/Mike | 2.0 % |
 | Solo to Qt-Wallet | 2.0 % |
 | BTC/BCH lottery | 1.0 % |
 | all other | 1.0 % |
@@ -27,7 +28,7 @@
 | Ethash | includes Etchash(Ethereum Classic) & Ubqhash(Ubiq) |
 | EthashB3 ||
 | KawPow | includes FiroPow(Firo), FiroPoWScc(SCC) |
-| ProgPow | includes ProgPowZ(Zano/Chinet/Evolution), EvrProgPow(Evrmore), vProgPow(VeriBlock) and ProgPow(Veil) |
+| ProgPow | includes ProgPowZ(Zano/Chinet/Evolution/NiRmata), EvrProgPow(Evrmore), vProgPow(VeriBlock) and ProgPow(Veil) |
 | Ghostrider | includes Mike |
 | SHA256D ||
 | SHA512256D ||
@@ -50,7 +51,7 @@
 | EvrProgPow| EVR |
 | KawPow | RVN, NEOX, ARL, KAW,PRCO, SATO, HVQ, TTM, ZELS, MEWC, VTE, LAB, CLORE, PAPRY, SATOX, XNA, FRENS |
 | FiroPow | FIRO, SCC |
-| Ghostrider | RTM, BTRM, BUT, YERB, JGC, NAPI, FITA, BBC, THOON, GSPC, LTR; |
+| Ghostrider | RTM, BTRM, BUT, YERB, JGC, NAPI, FITA, BBC, THOON, GSPC, LTR |
 | Mike | VKAX |
 | SHA512256D | RXD |
 | SHA256DT | NOVO |
