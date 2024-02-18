@@ -11,6 +11,10 @@
 - support Intel integrated iGPU (Windows & low memory algos: Sha256d, Sha512256d, Sha256dt, Blake3, Sha3D, Sha3Solidity)
 - different algo/coin per gpu
 
+## Known issues
+- Memory intensive algos do not work on AMD GPUs
+- Reading/setting  cor and memory clocks does not work on AMD interfaces
+
 
 ## Mining fees
 | Mining | fee |
