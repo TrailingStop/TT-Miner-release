@@ -1,4 +1,4 @@
-# TT-Miner - Version 2024.1.3
+# TT-Miner - Version 2024.1.5
 
 ## GPU-Miner for Nvidia - Windows & Linux (Hive custom miner package available)
 - Ethash, ProgPow, KawPow, Ghostrider, Sha256d, Sha512256d, Sha256dt, Sha3Solidity, Blake3, Sha3D, EthashB3
@@ -31,7 +31,7 @@
 | - | - |
 | Ethash | includes Etchash(Ethereum Classic) & Ubqhash(Ubiq) |
 | EthashB3 ||
-| KawPow | includes FiroPow(Firo), FiroPoWScc(SCC) |
+| KawPow | includes FiroPow(Firo), FiroPoWScc(SCC), MeowPow(MEOW) |
 | ProgPow | includes ProgPowZ(Zano/Chinet/Evolution/NiRmata), EvrProgPow(Evrmore), vProgPow(VeriBlock) and ProgPow(Veil) |
 | Ghostrider | includes Mike |
 | SHA256D ||
@@ -55,6 +55,7 @@
 | EvrProgPow| EVR |
 | KawPow | RVN, NEOX, ARL, KAW,PRCO, SATO, HVQ, TTM, ZELS, MEWC, VTE, LAB, CLORE, PAPRY, SATOX, XNA, FRENS |
 | FiroPow | FIRO, SCC |
+| MeowPow | MEOW |
 | Ghostrider | RTM, BTRM, BUT, YERB, JGC, NAPI, FITA, BBC, THOON, GSPC, LTR |
 | Mike | VKAX |
 | SHA512256D | RXD |
