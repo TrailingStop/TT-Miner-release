@@ -1,4 +1,4 @@
-# TT-Miner - Version 2024.1.5
+# TT-Miner - Version 2024.1.6
 
 ## GPU-Miner for Nvidia - Windows & Linux (Hive custom miner package available)
 - Ethash, ProgPow, KawPow, Ghostrider, Sha256d, Sha512256d, Sha256dt, Sha3Solidity, Blake3, Sha3D, EthashB3
@@ -10,6 +10,8 @@
 - BTC/BCH lottery (mine solo BCH/BTC with very low hashrate)
 - support Intel integrated iGPU (Windows & low memory algos: Sha256d, Sha512256d, Sha256dt, Blake3, Sha3D, Sha3Solidity)
 - different algo/coin per gpu
+- improved hashrate for ProgPow and KawPow algos - mostly on 10XX GPUs (not all types verified)
+- improved hashrate for Ghostrider
 
 ## Known issues
 - Memory intensive algos do not work on AMD GPUs
