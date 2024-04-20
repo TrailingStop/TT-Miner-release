@@ -12,11 +12,14 @@
 - BTC/BCH lottery (mine solo BCH/BTC with very low hashrate)
 - different algo/coin per gpu
 
-## Known issues
-- Reading for core and memory clocks does not work on AMD interfaces
-- OC on AMD not supported
-- dag-lowmem works with nVidia GPUs only
+## CPU/iGPU
+To use the CPU or/and the internal iGPU you can either add the device number of add:
+-cpu \<#cores\> : to enable CPU-mining
+-igpu : to enable iGPU-mining
 
+## zkBTC
+To mine zkBTC you just need to add -c ZKBTC like this:
+TT-Miner -c IRON -P \<wallet\>@pool.zkbitcoin.org:6122
 
 ## Prove of concept
 Support mining on GPU with too little RAM to hold the DAG file. This function works only if you also have a GPU installed that can hold the DAG. You also need to enable the dag 2disk function. Here is a sample that may allow you to mine Meow or Iron with a GTX 1050 Ti:
@@ -24,6 +27,12 @@ Support mining on GPU with too little RAM to hold the DAG file. This function wo
 TT-Miner -dag-2disk -dag-lowmem -c IRON -P \<wallet\>@\<IronPool\>
 
 Please note that this is just a first prove of concept and the performance will not be close to the hashrate if the DAG fits the GPU memory. Not sure if it makes sense to continue with this development?
+
+## Known issues
+- Reading for core and memory clocks does not work on AMD interfaces
+- OC on AMD not supported
+- dag-lowmem works with nVidia GPUs only
+
 
 
 ## Mining fees
