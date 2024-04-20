@@ -21,7 +21,7 @@
 ## Prove of concept
 Support mining on GPU with too little RAM to hold the DAG file. This function works only if you also have a GPU installed that can hold the DAG. You also need to enable the dag 2disk function. Here is a sample that may allow you to mine Meow or Iron with a GTX 1050 Ti:
 
-TT-Miner -dag-2disk -dag-lowmem -c IRON -P <wallet>@<IronPool>
+TT-Miner -dag-2disk -dag-lowmem -c IRON -P \<wallet\>@\<IronPool\>
 
 Please note that this is just a first prove of concept and the performance will not be close to the hashrate if the DAG fits the GPU memory. Not sure if it makes sense to continue with this development?
 
