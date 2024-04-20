@@ -1,21 +1,29 @@
-# TT-Miner - Version 2024.1.8
+# TT-Miner - Version 2024.2.0
 
 ## GPU-Miner for Nvidia - Windows & Linux (Hive custom miner package available)
-- Ethash, ProgPow, KawPow, Ghostrider, Sha256d, Sha512256d, Sha256dt, Sha3Solidity, Blake3, Sha3D, EthashB3
+- nVidia: Ethash, ProgPow, KawPow, Ghostrider, Sha256d, Sha512256d, Sha256dt, Sha3Solidity, Blake3, Sha3D, EthashB3, FishHash, MeowPow
+- AMD: same algos as nVidia except Ghostrider
+- CPU & iGPU support (-cpu/-igpu)
 - Pool & Solo mining (to QT-Wallet & EPIC Listener, Zano-Wallet)
-- DAG management, save to disk, mem and swap on GPU
+- DAG management, save to disk, mem and swap on GPU (prove of concept: mining on low mem GPUs)
 - alternating mining Zil/EPIC/any 2nd or 3rd coin
-- Overclocking (core and memory clock lock/offset and power limit)
+- Overclocking (core and memory clock lock/offset and power limit) - not supported on AMD GPUs
 - separat OC-settings per algo/device
 - BTC/BCH lottery (mine solo BCH/BTC with very low hashrate)
-- support Intel integrated iGPU (Windows & low memory algos: Sha256d, Sha512256d, Sha256dt, Blake3, Sha3D, Sha3Solidity)
 - different algo/coin per gpu
-- improved hashrate for ProgPow and KawPow algos - mostly on 10XX GPUs (not all types verified)
-- improved hashrate for Ghostrider
 
 ## Known issues
-- Memory intensive algos do not work on AMD GPUs
-- Reading/setting  cor and memory clocks does not work on AMD interfaces
+- Reading for core and memory clocks does not work on AMD interfaces
+- OC on AMD not supported
+- dag-lowmem works with nVidia GPUs only
+
+
+## Prove of concept
+Support mining on GPU with too little RAM to hold the DAG file. This function works only if you also have a GPU installed that can hold the DAG. You also need to enable the dag 2disk function. Here is a sample that may allow you to mine Meow or Iron with a GTX 1050 Ti:
+
+TT-Miner -dag-2disk -dag-lowmem -c IRON -P <wallet>@<IronPool>
+
+Please note that this is just a first prove of concept and the performance will not be close to the hashrate if the DAG fits the GPU memory. Not sure if it makes sense to continue with this development?
 
 
 ## Mining fees
@@ -33,6 +41,7 @@
 | - | - |
 | Ethash | includes Etchash(Ethereum Classic) & Ubqhash(Ubiq) |
 | EthashB3 ||
+| FishHash ||
 | KawPow | includes FiroPow(Firo), FiroPoWScc(SCC), MeowPow(MEOW) |
 | ProgPow | includes ProgPowZ(Zano/Chinet/Evolution/NiRmata), EvrProgPow(Evrmore), vProgPow(VeriBlock) and ProgPow(Veil) |
 | Ghostrider | includes Mike |
@@ -51,11 +60,12 @@
 | Etchash | ETC |
 | EthashB3 | RTH |
 | Ubqhash | UBQ |
+| FishHash | IRON |
 | ProgPow | EPIC, SERO, VEIL |
 | ProgPowZ | ZANO, EVOX |
 | vProgPow | VBK |
 | EvrProgPow| EVR |
-| KawPow | RVN, NEOX, ARL, KAW,PRCO, SATO, HVQ, TTM, ZELS, MEWC, VTE, LAB, CLORE, PAPRY, SATOX, XNA, FRENS |
+| KawPow | RVN, NEOX, ARL, KAW, PRCO, SATO, HVQ, TTM, ZELS, MEWC, VTE, LAB, CLORE, PAPRY, SATOX, XNA, FRENS |
 | FiroPow | FIRO, SCC |
 | MeowPow | MEOW |
 | Ghostrider | RTM, BTRM, BUT, YERB, JGC, NAPI, FITA, BBC, THOON, GSPC, LTR |
@@ -64,7 +74,7 @@
 | SHA256DT | NOVO |
 | SHA256 | BTC, BCH |
 | SHA3D | KCN |
-| SHA3SOLIDITY | ETI, BNBTC |
+| SHA3SOLIDITY | ETI, BNBTC, ZKBTC |
 | Blake3 | ALPH |
 
 
