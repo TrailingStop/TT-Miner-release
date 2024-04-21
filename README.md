@@ -1,6 +1,7 @@
 # TT-Miner - Version 2024.2.0
 
 ## GPU-Miner for Nvidia - Windows & Linux (Hive custom miner package available)
+- required nVidia driver: Linux >=525.60.13, Windows >=528.33
 - nVidia: Ethash, ProgPow, KawPow, Ghostrider, Sha256d, Sha512256d, Sha256dt, Sha3Solidity, Blake3, Sha3D, EthashB3, FishHash, MeowPow
 - AMD: same algos as nVidia except Ghostrider
 - CPU & iGPU support (-cpu/-igpu)
