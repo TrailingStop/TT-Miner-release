@@ -58,7 +58,7 @@ Please note that this is just a first prove of concept and the performance will 
 | SHA256D ||
 | SHA512256D ||
 | SHA256DT ||
-| SHA3SOLIDITY | Sha3 Solidity for Etica and BNbitcoin |
+| SHA3SOLIDITY | Sha3 Solidity for Etica, zkBTC and BNbitcoin |
 | SHA3D ||
 | Blake3 ||
 
