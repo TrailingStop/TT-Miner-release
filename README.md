@@ -1,10 +1,13 @@
-# TT-Miner - Version 2024.2.0
+# TT-Miner - Version 2024.3.0
+
+# What's new in TT version 2024.3.0
 
 ## GPU-Miner for Nvidia - Windows & Linux (Hive custom miner package available)
 - required nVidia driver: Linux >=525.60.13, Windows >=528.33
 - nVidia: Ethash, ProgPow, KawPow, Ghostrider, Sha256d, Sha512256d, Sha256dt, Sha3Solidity, Blake3, Sha3D, EthashB3, FishHash, MeowPow
 - AMD: same algos as nVidia except Ghostrider
-- CPU & iGPU support (-cpu/-igpu)
+- CPU & iGPU support (-cpu/-igpu) - OpenCL
+- native CPU mining
 - Pool & Solo mining (to QT-Wallet & EPIC Listener, Zano-Wallet)
 - DAG management, save to disk, mem and swap on GPU (prove of concept: mining on low mem GPUs)
 - alternating mining Zil/EPIC/any 2nd or 3rd coin
@@ -18,23 +21,6 @@ To use the CPU or/and the internal iGPU you can either add the device number of 
 -cpu \<#cores\> : to enable CPU-mining
 -igpu : to enable iGPU-mining
 
-## zkBTC
-To mine zkBTC you just need to add -c ZKBTC like this:
-TT-Miner -c IRON -P \<wallet\>@pool.zkbitcoin.org:6122
-
-## Prove of concept
-Support mining on GPU with too little RAM to hold the DAG file. This function works only if you also have a GPU installed that can hold the DAG. You also need to enable the dag 2disk function. Here is a sample that may allow you to mine Meow or Iron with a GTX 1050 Ti:
-
-TT-Miner -dag-2disk -dag-lowmem -c IRON -P \<wallet\>@\<IronPool\>
-
-Please note that this is just a first prove of concept and the performance will not be close to the hashrate if the DAG fits the GPU memory. Not sure if it makes sense to continue with this development?
-
-## Known issues
-- Reading for core and memory clocks does not work on AMD interfaces
-- OC on AMD not supported
-- dag-lowmem works with nVidia GPUs only
-
-
 
 ## Mining fees
 | Mining | fee |
@@ -42,7 +28,6 @@ Please note that this is just a first prove of concept and the performance will 
 | Epic Cash | 2.0 % |
 | Ghostrider/Mike | 2.0 % |
 | Solo to Qt-Wallet | 2.0 % |
-| BTC/BCH lottery | 1.0 % |
 | all other | 1.0 % |
 
 
@@ -61,6 +46,8 @@ Please note that this is just a first prove of concept and the performance will 
 | SHA3SOLIDITY | Sha3 Solidity for Etica, zkBTC and BNbitcoin |
 | SHA3D ||
 | Blake3 ||
+| FLEX |CPU-only|
+| SpectreX |CPU-only|
 
 
 ## Supported coins in detail
@@ -86,6 +73,8 @@ Please note that this is just a first prove of concept and the performance will 
 | SHA3D | KCN |
 | SHA3SOLIDITY | ETI, BNBTC, ZKBTC |
 | Blake3 | ALPH |
+| FLEX | KCN |
+| SpectreX | SPR |
 
 
 
