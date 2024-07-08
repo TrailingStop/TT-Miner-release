@@ -26,7 +26,7 @@ To use the CPU or/and the internal iGPU you can either add the device number of 
 | Mining | fee |
 | - | - |
 | Epic Cash | 2.0 % |
-| Ghostrider/Mike | 2.0 % |
+| Ghostrider/Mike/Sha3Solidity | 2.0 % |
 | Solo to Qt-Wallet | 2.0 % |
 | all other | 1.0 % |
 
