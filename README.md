@@ -1,6 +1,9 @@
-# TT-Miner - Version 2024.3.0
+# TT-Miner - Version 2024.3.1
 
-# What's new in TT version 2024.3.0
+# What's new in TT version 2024.3.1
+
+- Fix: Support for ExtraNonce for SpectreX
+- Fix: Add Keep-Alive for EPIC stratum protocol
 
 ## GPU-Miner for Nvidia - Windows & Linux (Hive custom miner package available)
 - required nVidia driver: Linux >=525.60.13, Windows >=528.33
