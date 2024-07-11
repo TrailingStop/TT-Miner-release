@@ -1,9 +1,9 @@
-# TT-Miner - Version 2024.3.1
+# TT-Miner - Version 2024.3.2
 
-# What's new in TT version 2024.3.1
+# What's new in TT version 2024.3.2
+- New: CPU-Algo XELIS (version 2) and related coin XEL
+- New: EPIC and any CPU algo is now joinable.
 
-- Fix: Support for ExtraNonce for SpectreX
-- Fix: Add Keep-Alive for EPIC stratum protocol
 
 ## GPU-Miner for Nvidia - Windows & Linux (Hive custom miner package available)
 - required nVidia driver: Linux >=525.60.13, Windows >=528.33
@@ -29,7 +29,7 @@ To use the CPU or/and the internal iGPU you can either add the device number of 
 | Mining | fee |
 | - | - |
 | Epic Cash | 2.0 % |
-| Ghostrider/Mike/Sha3Solidity | 2.0 % |
+| CPU-algos/Ghostrider/Mike/Sha3Solidity | 2.0 % |
 | Solo to Qt-Wallet | 2.0 % |
 | all other | 1.0 % |
 
@@ -51,6 +51,7 @@ To use the CPU or/and the internal iGPU you can either add the device number of 
 | Blake3 ||
 | FLEX |CPU-only|
 | SpectreX |CPU-only|
+| Xelis |CPU-only|
 
 
 ## Supported coins in detail
@@ -78,6 +79,7 @@ To use the CPU or/and the internal iGPU you can either add the device number of 
 | Blake3 | ALPH |
 | FLEX | KCN |
 | SpectreX | SPR |
+| Xelis | XEL |
 
 
 
