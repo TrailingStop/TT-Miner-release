@@ -3,6 +3,7 @@
 # What's new in TT version 2024.3.2
 - New: CPU-Algo XELIS (version 2) and related coin XEL
 - New: EPIC and any CPU algo is now joinable.
+- Fix: fixes a bug with the extranonce for spectre-pools
 
 
 ## GPU-Miner for Nvidia - Windows & Linux (Hive custom miner package available)
