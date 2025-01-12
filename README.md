@@ -5,7 +5,7 @@ I will open soon the TT-Trader github. An application to run algos on crypto fut
 
 For BitMart the link is: https://www.bitmart.com/invite/c6nXwm/en-US
 
-I can also help to get some a fee arrangement. Just let me know if you are interested. Please use the same mail as mentioned above.
+I can also help to get a fee-discount arrangement. Just let me know if you are interested. Please use the same mail as mentioned above.
 
 Thanks all.
 
